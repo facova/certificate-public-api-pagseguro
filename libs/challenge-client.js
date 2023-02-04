@@ -12,7 +12,6 @@ const getChallange = (authToken, env) => {
     })
     .then(response => {
         console.log("Chamada para o challange recebida com sucesso.")
-        console.log(response.data);
         return {
             access_token: response.data.access_token,
             challenge: response.data.challenge
